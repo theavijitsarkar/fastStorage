@@ -1,5 +1,5 @@
 {
-  "name": "faststorage",
+  "name": "fastlocalstorage",
   "version": "1.0.1",
   "description": "Replacement for localStorage which is dramatically faster, yet uses localStorage for persistance",
   "main": "index.js",

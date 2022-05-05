@@ -1,10 +1,10 @@
 
 //SPEED TESTS
-//var storage = window.fastStorage 
+//var storage = window.fastLocalStorage 
  
 runTest(window.localStorage, 'localStorage')
 
-runTest(window.fastStorage, 'fastStorage')
+runTest(window.fastLocalStorage, 'fastLocalStorage')
 
 function runTest(storage, storeName){
     console.log("TESTING STORE ", storeName)

@@ -1,23 +1,23 @@
-var fastStorage = {}
+var fastLocalStorage = {}
 
-fastStorage.state = {}
+fastLocalStorage.state = {}
 
-fastStorage.getItem = function(key){
+fastLocalStorage.getItem = function(key){
 
-    if(fastStorage.state[key]) { return fastStorage.state[key] }
+    if(fastLocalStorage.state[key]) { return fastLocalStorage.state[key] }
     else {
-        fastStorage.state[key] =  window.localStorage.getItem(key)
-        return fastStorage.state[key] 
+        fastLocalStorage.state[key] =  window.localStorage.getItem(key)
+        return fastLocalStorage.state[key] 
     }
 
 
 }
 
-fastStorage.setItem = function(key,val){
+fastLocalStorage.setItem = function(key,val){
 
 
     //Set in local memory
-    fastStorage.state[key] = val
+    fastLocalStorage.state[key] = val
 
     //Set in localStorage
     window.localStorage.setItem(key,val)
@@ -25,21 +25,21 @@ fastStorage.setItem = function(key,val){
 
 }
 
-fastStorage.clear = function(){
+fastLocalStorage.clear = function(){
 
-    fastStorage.state = {}
+    fastLocalStorage.state = {}
     window.localStorage.clear()
     
 }
 
-fastStorage.removeItem = function(key) {
+fastLocalStorage.removeItem = function(key) {
 
-    delete fastStorage[key]
+    delete fastLocalStorage[key]
     window.localStorage.removeItem(key)
 }
 
 
-export default fastStorage
+export default fastLocalStorage
 
 
 
