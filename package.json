@@ -1,0 +1,18 @@
+{
+  "name": "faststorage",
+  "version": "1.0.1",
+  "description": "Replacement for localStorage which is dramatically faster, yet uses localStorage for persistance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "localStorage",
+    "localStorage",
+    "cache",
+    "fast",
+    "localStorage"
+  ],
+  "author": "Avijit Sarkar",
+  "license": "ISC"
+}
